@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>TerraWars</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <div>
+            <h2>How to Play</h2>
+            <ul>
+                <li>Use <strong>numbers 1-6</strong> to start building units.</li>
+                <li>Use your mouse to position this unit, and <strong>left click</strong> to construct it. Cancel the action with <strong>right click.</strong></li>
+                <li><strong>Click on units</strong> to make them stop/go. Use this to tactically position your units, and coordinate your attacks.</li>
+                <li><strong>Construct miners</strong> to mine ore to collect more money.</li>
+                <li>Navigate the battlefield with the <strong>Up/Down arrow keys.</strong></li>
+            </ul>
+            <h2>Tips</h2>
+            <ul>
+                <li>The enemy base is defended by 2 gunships. These units are powerful, so save your money/firepower until you can overcome their autocannons.</li>
+                <li>The enemy will constantly bombard you with units. Always be prepared for an attack.</li>
+                <li>Build miners early on to build your economy. Remember, more money means more units.</li>
+            </ul>
+            <h2>Credits</h2>
+            <ul>
+                <li><a href="https://opengameart.org/content/space-kit-remade">Ship models</a></li>
+                <li><a href="https://opengameart.org/content/orange-hq-building-isometric">HQ model</a></li>
+                <li><a href="https://opengameart.org/content/pixel-explosion-12-frames">Explosion Sprite</a></li>
+                <li><a href="https://opengameart.org/content/game-game">Music</a></li>
+                <li><a href="https://opengameart.org/content/sci-fi-sounds">Sound Effects - lasers</a></li>
+                <li><a href="https://opengameart.org/content/2-high-quality-explosions">Sounds Effects - Explosions</a></li>
+            </ul>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center; height: auto; width: 600px;">
+            <canvas id="cvs" width="600" height="800" style="border: 1px dotted"></canvas>
+
+            <button id="startButton" onclick="start()">Start game</button>
+        </div>
+
+        <!-- Scripts loaded in dependency order -->
+        <script src="js/globals.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/unit.js"></script>
+        <script src="js/crystal.js"></script>
+        <script src="js/vfx.js"></script>
+        <script src="js/ui.js"></script>
+        <script src="js/team.js"></script>
+        <script src="js/input.js"></script>
+        <script src="AI.js"></script>
+        <script src="js/game.js"></script>
+    </body>
+</html>
